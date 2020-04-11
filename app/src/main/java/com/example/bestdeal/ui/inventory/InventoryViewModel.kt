@@ -1,13 +1,13 @@
-package com.example.bestdeal.ui.send
+package com.example.bestdeal.ui.inventory
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class SendViewModel : ViewModel() {
+class InventoryViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is send Fragment"
+        value = "This is gallery Fragment"
     }
     val text: LiveData<String> = _text
 }

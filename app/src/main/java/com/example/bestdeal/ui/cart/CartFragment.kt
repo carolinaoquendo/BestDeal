@@ -1,4 +1,4 @@
-package com.example.bestdeal.ui.tools
+package com.example.bestdeal.ui.cart
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,9 +10,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.bestdeal.R
 
-class ToolsFragment : Fragment() {
+class CartFragment : Fragment() {
 
-    private lateinit var toolsViewModel: ToolsViewModel
+    private lateinit var toolsViewModel: CartViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -20,12 +20,9 @@ class ToolsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         toolsViewModel =
-            ViewModelProviders.of(this).get(ToolsViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_tools, container, false)
-        val textView: TextView = root.findViewById(R.id.text_tools)
-        toolsViewModel.text.observe(this, Observer {
-            textView.text = it
-        })
+            ViewModelProviders.of(this).get(CartViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_cart_view, container, false)
+
         return root
     }
 }

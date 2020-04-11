@@ -13,31 +13,33 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.bestdeal.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:name="com.example.bestdeal.ui.inventory.InventoryFragment"
+        android:label="Inventario"
+        tools:layout="@layout/fragment_inventario" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.bestdeal.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_product"
+        android:name="com.example.bestdeal.ui.product.ProductFragment"
+        android:label="Product"
+        tools:layout="@layout/fragment_product" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.example.bestdeal.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_Cart"
+        android:name="com.example.bestdeal.ui.cart.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart_view" />
+
+
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.bestdeal.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:id="@+id/nav_database_list"
+        android:name="com.example.bestdeal.ui.database.DataBaseListFragment"
+        android:label="DataBaseListFragment"
+        tools:layout="@layout/fragment_inventario" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.bestdeal.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_database_details"
+        android:name="com.example.bestdeal.ui.database.DataBaseDetailFragments"
+        android:label="DataBaseListDetailFragment"
+        tools:layout="@layout/fragment_product_item" />
 </navigation>
